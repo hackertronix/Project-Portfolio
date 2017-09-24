@@ -1424,8 +1424,12 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
 
     .info-container {
         width:70%;
+        left: 22%;
     }
 
+    .phone-img {
+        margin-left: 5%;
+    }
 
     .fp-slidesNav {
         display: block;
@@ -1579,6 +1583,11 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
 
     .info-container {
         width:62%;
+        left: 25%;
+    }
+
+    .phone-img {
+        margin-left: 11%;
     }
 
 }
