@@ -633,22 +633,23 @@ h1, h2, h3, h4, h5, strong, b {
 
 .github-googleplay-button {
     cursor: pointer;
-    height: 4.2em;
-    width: auto;
+    height: auto;
+    width: 75%;
     position: absolute;
     z-index: 50;
     display: block;
 }
 
-.shiftLeft {
-    left: -5%;
-}
-
 .googleplay {
     top: -13px;
-    height: 6em;
+    height: auto;
+    width: 50%;
 }
 
+.shiftLeft {
+    left: -5%;
+    width: 72%;
+}
 
 #section4 h1,#section3 h1 {
     position: absolute;
@@ -803,6 +804,7 @@ h1, h2, h3, h4, h5, strong, b {
     position: relative;
     z-index: 50;
 }
+
 .mobile-left-button {
     width: 93%;
     margin: 2% 15%;
@@ -817,6 +819,11 @@ h1, h2, h3, h4, h5, strong, b {
 
 .special-margin {
     margin: 6% auto 0;
+}
+
+.mobile-button-container {
+    width: 60%;
+    margin: 0 auto;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.25),
@@ -999,6 +1006,11 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
         height: 28%;
         margin-left: 39%;
         margin-top: 150%;
+    }
+
+
+    .mobile-button-container {
+        width: 95%;
     }
 
 }
@@ -1194,6 +1206,9 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
         width: 65%;
     }
 
+    .mobile-button-container {
+        width: 75%;
+    }
 
 }
 
@@ -1292,7 +1307,9 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
         width: 50%;
     }
 
-
+    .mobile-button-container {
+        width: 60%;
+    }
 
 }
 
@@ -1371,7 +1388,6 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
         width: 40%;
     }
 
-
     #section3 h1, #section4 h1 {
         font-size: 3em;
         left: 12%;
@@ -1404,6 +1420,10 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
 
     .card {
         display: block;
+    }
+
+    .info-container {
+        width:70%;
     }
 
 
@@ -1555,6 +1575,10 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
 
     #section4 p {
         font-size: 2.3em;
+    }
+
+    .info-container {
+        width:62%;
     }
 
 }
