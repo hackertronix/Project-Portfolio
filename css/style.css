@@ -942,8 +942,8 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
     }
 
     #section3 h1, #section4 h1 {
-        font-size: 3em;
-        left: 4em;
+        font-size: 3.8em;
+        left: 16%;
     }
 
 
@@ -1359,6 +1359,12 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
         margin: 2.5% auto 0;
         width: 40%;
     }
+
+
+    #section3 h1, #section4 h1 {
+        font-size: 3em;
+        left: 12%;
+    }
 }
 
 
@@ -1443,7 +1449,7 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
 
 
 @media screen and (min-width:80em) {
-   /*********defaukts******/
+    /*********defaukts******/
     html,body {
         font-size: 15px;
     }
@@ -1520,9 +1526,10 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
         height: 58%;
     }
 
+
     #section3 h1, #section4 h1 {
         font-size: 2em;
-        left: 3em;
+        left: 7%;
     }
 
     .info-container h2 {
@@ -1599,34 +1606,5 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
 
 }
 
-/*
-
-
-#previous,#next {
-    z-index: 50;
-    pointer-events: auto;
-}
-
-.slide {
-    position: absolute;
-    -webkit-transition: 0.6s ease;
-    transition: 0.6s ease;
-    -webkit-transform: translate(-100%, 0);
-    transform: translate(-100%, 0);
-}
-.slide.active {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-}
-.slide.active ~ .slide {
-    -webkit-transform: translate(100%, 0);
-    transform: translate(100%, 0);
-}
-
-
-
-
-
-*/
 
 
