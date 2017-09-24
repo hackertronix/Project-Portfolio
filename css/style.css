@@ -10,6 +10,11 @@ html,body{
     -moz-osx-font-smoothing: grayscale;
 }
 
+/*to fix safari bold font craap*/
+h1, h2, h3, h4, h5, strong, b {
+    font-weight: 400;
+}
+
 .no_transition {
     transition: none !important;
 }
