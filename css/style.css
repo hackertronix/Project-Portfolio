@@ -120,6 +120,7 @@ h1, h2, h3, h4, h5, strong, b {
 }
 
 #welcome-msg {
+    visibility: hidden;
     display: block;
     z-index: 50;
     position: relative;
@@ -652,6 +653,7 @@ h1, h2, h3, h4, h5, strong, b {
 }
 
 #section4 h1,#section3 h1 {
+    visibility: hidden;
     position: absolute;
     font-family: Graphik-Semibold, Roboto;
     font-weight: 600;

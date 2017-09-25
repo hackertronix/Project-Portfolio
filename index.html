@@ -60,7 +60,7 @@
                 <span id="main-heading"></span>
             </div>
 
-            <span id="welcome-msg" class="come-in">Welcome to my website</span>
+            <span id="welcome-msg">Welcome to my website</span>
 
             <a href="#about">
                 <img src="images/down-arrow.png" class="down-arrow" >
@@ -368,7 +368,6 @@
 <script>
 
     var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-
     $(document).ready(function(){
         const scene = document.getElementById('fullpage');
         if(window.innerWidth < 600){
@@ -388,7 +387,7 @@
             });
         }
 
-        var indexSlide = 0, sliding = true,id;
+        var indexSlide = 0, sliding = true, id;
 
         $('#fullpage').fullpage({
 
@@ -409,7 +408,10 @@
             afterLoad : function(anchorLink, index, direction) {
 
                 if(index === 1 || anchorLink === 'home'){
+                    $('#welcome-msg').css('visibility','visible').addClass('come-in');
                     callMakeDiv('#1f3264',1);
+                    $('#section3 h1').css('visibility','visible');
+                    $('#section4 h1').css('visibility','visible');
                 }
 
                 if(index === 2 || anchorLink === 'about'){
@@ -426,6 +428,8 @@
                 }
 
                 if((index === 3 || anchorLink === 'projects') /*&& !sliding*/) {
+
+
                     callMakeDiv('#1f3264', 3);
                     $('#slide1 .card').addClass('come-in').one(animationEnd,function (){
                         $('.card').css('opacity','1');
@@ -450,10 +454,7 @@
 
                 }
 
-
                 if (index === 4 || anchorLink === 'contact') {
-                    //$('.left').addClass('animateRightSlide');
-                    //$('.right-large').addClass('animateLeftSlide');
                     $('#section4 p').addClass('come-in').one(animationEnd,function() {
                         $('.social-img-div').addClass('come-in').one(animationEnd,function() {
                             $('.darthVader').addClass('creepy-side').one(animationEnd,function(){
