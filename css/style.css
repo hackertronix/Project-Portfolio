@@ -113,7 +113,7 @@ h1, h2, h3, h4, h5, strong, b {
     font-family: Graphik-Semibold, Roboto;
     font-size: 10em;
     font-weight: 600;
-    letter-spacing: 0.0125em;
+    letter-spacing: 0.2px;
     color: #ffffff;
     top: 24%;
     left: 8%;
@@ -658,6 +658,7 @@ h1, h2, h3, h4, h5, strong, b {
     font-family: Graphik-Semibold, Roboto;
     font-weight: 600;
     margin: 0;
+    top: 3.7%;
 }
 
 .left {
@@ -772,15 +773,19 @@ h1, h2, h3, h4, h5, strong, b {
 .mobile-phone-img {
     display: block;
     margin: 3% auto 0;
-    width: 77%;
+    width: 70%;
     opacity: 0;
+}
+
+.special-width {
+    width: 68%;
 }
 
 .mobile-card h2 {
     color: white;
     font-size: 6em;
     text-align: center;
-    margin-top: 30%;
+    margin-top: 27%;
     font-weight: normal;
     font-family: Graphik-Semibold, Roboto;
     opacity: 0;
@@ -882,31 +887,10 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
         top: 30%!important;
         left: 10% !important;
     }
-    /*
 
-    .button_container {
-        width: 3.5em;
-        height: 1.6875em;
-        left: 6% !important;
+    .down-arrow {
+        top: 75%;
     }
-
-    .button_container span {
-        height: 0.5em;
-    }
-
-    .button_container span:nth-of-type(2) {
-        top: 1.2em;
-    }
-
-    .button_container span:nth-of-type(3) {
-        top: 2.5em;
-    }
-
-    .button_container.active .top {
-        -webkit-transform: translateY(1.6875em) translateX(0) rotate(45deg);
-        transform: translateY(1.6875em) translateX(0) rotate(45deg);
-    }
-    */
 
     .overlay nav {
         font-size: 6.1em;
@@ -919,18 +903,18 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
     }
 
     #section2 h1 {
-        margin-top: 0.5em;
-        font-size: 10em;
+        margin-top: 1.8em;
+        font-size: 6.5em;
     }
 
     #section2 h3 {
         margin-top: 2em;
-        font-size: 4.1em;
+        font-size: 3.1em;
     }
 
 
     #section2 p {
-        font-size: 2.3em;
+        font-size: 2.1em;
     }
 
     .force {
@@ -940,9 +924,9 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
     }
 
     .speech {
-        height: 17%;
+        height: 21%;
         left: 33%;
-        top: 63%;
+        top: 60%;
     }
 
     .fp-slidesNav {
@@ -958,8 +942,9 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
     }
 
     #section3 h1, #section4 h1 {
-        font-size: 4.1em;
-        left: 14%;
+        font-size: 4em;
+        left: 19%;
+        top: 5.7%;
     }
 
 
@@ -1017,6 +1002,17 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
         width: 95%;
     }
 
+    .text-mobile {
+        display: block !important;
+    }
+
+    .text-other {
+        display: none !important;
+    }
+
+    .button_container {
+        left: 5% !important;
+    }
 }
 
 @media screen and (min-width:22.5em)  {
@@ -1154,6 +1150,14 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
         left: 12%;
     }
 
+    .text-mobile {
+        display: none !important;
+    }
+
+    .text-other {
+        display: block !important;
+    }
+
 }
 
 @media screen and (min-width:37.5em)  {
@@ -1217,6 +1221,10 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
 
     .mobile-button-container {
         width: 75%;
+    }
+
+    .down-arrow {
+        top: 83%;
     }
 
     #section3 h1, #section4 h1 {
@@ -1383,6 +1391,10 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
         font-size: 4em;
     }
 
+    .button_container {
+        left: 3% !important;
+    }
+
 }
 
 
@@ -1476,6 +1488,7 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
     #section3 h1, #section4 h1 {
         font-size: 2.8em;
         left: 7.5%;
+        top: 3.7%;
     }
 
 }
