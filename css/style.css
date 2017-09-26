@@ -10,7 +10,7 @@ html,body{
     -moz-osx-font-smoothing: grayscale;
 }
 
-/*to fix safari bold font craap*/
+/*to fix safari bold font crap*/
 h1, h2, h3, h4, h5, strong, b {
     font-weight: 400;
 }
@@ -189,8 +189,8 @@ h1, h2, h3, h4, h5, strong, b {
     position: absolute;
     top: 5% !important;
     left: 3% !important;
-    height: 1.6875em;
-    width: 2.1875em;
+    height: 27px/*1.6875em*/;
+    width: 35px/*2.1875em*/;
     cursor: pointer;
     z-index: 100;
     -webkit-transition: opacity .25s ease;
@@ -202,8 +202,8 @@ h1, h2, h3, h4, h5, strong, b {
 }
 
 .button_container.active .top {
-    -webkit-transform: translateY(0.6875em) translateX(0) rotate(45deg);
-    transform: translateY(0.6875em) translateX(0) rotate(45deg);
+    -webkit-transform: translateY(11px) translateX(0) rotate(45deg);
+    transform: translateY(11px) translateX(0) rotate(45deg);
     background: #FFF;
 }
 
@@ -213,15 +213,15 @@ h1, h2, h3, h4, h5, strong, b {
 }
 
 .button_container.active .bottom {
-    -webkit-transform: translateY(-0.6875em) translateX(0) rotate(-45deg);
-    transform: translateY(-0.6875em) translateX(0) rotate(-45deg);
+    -webkit-transform: translateY(-11px) translateX(0) rotate(-45deg);
+    transform: translateY(-11px) translateX(0) rotate(-45deg);
     background: #FFF;
 }
 
 .button_container span {
     background: #ffffff;
     border: none;
-    height: 0.3125em;
+    height: 5px;
     width: 100%;
     position: absolute;
     top: 0;
@@ -233,11 +233,11 @@ h1, h2, h3, h4, h5, strong, b {
 }
 
 .button_container span:nth-of-type(2) {
-    top: 0.6875em;
+    top: 11px;
 }
 
 .button_container span:nth-of-type(3) {
-    top: 1.375em;
+    top: 22px;
 }
 
 .overlay {
@@ -882,6 +882,7 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
         top: 30%!important;
         left: 10% !important;
     }
+    /*
 
     .button_container {
         width: 3.5em;
@@ -905,6 +906,7 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
         -webkit-transform: translateY(1.6875em) translateX(0) rotate(45deg);
         transform: translateY(1.6875em) translateX(0) rotate(45deg);
     }
+    */
 
     .overlay nav {
         font-size: 6.1em;
@@ -956,8 +958,8 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
     }
 
     #section3 h1, #section4 h1 {
-        font-size: 3.8em;
-        left: 16%;
+        font-size: 4.1em;
+        left: 14%;
     }
 
 
@@ -1147,6 +1149,11 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
         width: 60%;
     }
 
+    #section3 h1, #section4 h1 {
+        font-size: 3.9em;
+        left: 12%;
+    }
+
 }
 
 @media screen and (min-width:37.5em)  {
@@ -1210,6 +1217,11 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
 
     .mobile-button-container {
         width: 75%;
+    }
+
+    #section3 h1, #section4 h1 {
+        font-size: 3.9em;
+        left: 10%;
     }
 
 }
@@ -1344,8 +1356,8 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
     }
 
     #section3 h1, #section4 h1 {
-        font-size: 2.8em;
-        left: 13%;
+        font-size: 3em;
+        left: 9%;
     }
 
     #section4 p {
@@ -1391,8 +1403,8 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
     }
 
     #section3 h1, #section4 h1 {
-        font-size: 3em;
-        left: 12%;
+        font-size: 2.9em;
+        left: 8.5%;
     }
 }
 
@@ -1461,6 +1473,10 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
         height: 67%;
     }
 
+    #section3 h1, #section4 h1 {
+        font-size: 2.8em;
+        left: 7.5%;
+    }
 
 }
 
@@ -1509,7 +1525,7 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
         left: 9% !important;
     }
 
-
+/*
     .button_container {
         width: 2.1875em;
         height: 1.6875em;
@@ -1531,7 +1547,7 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
     .button_container.active .top {
         -webkit-transform: translateY(0.6875em) translateX(0) rotate(45deg);
         transform: translateY(0.6875em) translateX(0) rotate(45deg);
-    }
+    }*/
 
     .overlay nav {
         font-size: 3.1em;
