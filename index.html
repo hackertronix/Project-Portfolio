@@ -487,13 +487,13 @@
 
 
                     callMakeDiv('#1f3264', 3);
-                    $('#slide1 .card').addClass('come-in').one(animationEnd,function (){
+                    $('#slide0 .card').addClass('come-in').one(animationEnd,function (){
                         $('.card').css('opacity','1');
                     });
 
-                    $('#slide1 .mobile-card h2').addClass('come-in').one(animationEnd, function () {
-                        $('#slide1 .mobile-button').addClass('come-in').one(animationEnd,function () {
-                            $('#slide1 .mobile-phone-img').addClass('come-in').one(animationEnd,function () {
+                    $('#slide0 .mobile-card h2').addClass('come-in').one(animationEnd, function () {
+                        $('#slide0 .mobile-button').addClass('come-in').one(animationEnd,function () {
+                            $('#slide0 .mobile-phone-img').addClass('come-in').one(animationEnd,function () {
                                 $('.mobile-button').css('opacity','1');
                                 $('.mobile-card h2').css('opacity','1');
                                 $('.mobile-phone-img').css('opacity','1');
@@ -747,7 +747,7 @@
                 if (flag === 7) {
                     clearInterval(id);
                 }
-            },500);
+            },1500);
         }
 
         function makeDiv(color, index, secId) {
