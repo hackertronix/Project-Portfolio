@@ -506,6 +506,14 @@
                             indexSlide++;
                         }, 5000);
                     }
+                    $('.info-container, .phone-img').hover(function() {
+                    	clearInterval(id);
+                    }, function() {
+                    	id = setInterval(function () {
+                            $.fn.fullpage.moveSlideRight();
+                            indexSlide++;
+                        }, 5000);	
+                    });
 
                 }
 
@@ -530,8 +538,8 @@
             onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex) {
                 var isFirst = direction === 'right' && nextSlideIndex > slideIndex + 1;
                 var isLast = direction === 'left' && slideIndex > nextSlideIndex + 1;
-                $(this).parent().toggleClass('no_transition', isFirst || isLast);
-                $(this).parent().toggleClass('no_transition', isFirst || isLast);
+                //$(this).parent().toggleClass('no_transition', isFirst || isLast);
+                //$(this).parent().toggleClass('no_transition', isFirst || isLast);
             }
 
         });
