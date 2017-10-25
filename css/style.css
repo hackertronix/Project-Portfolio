@@ -67,10 +67,18 @@ h1, h2, h3, h4, h5, strong, b {
 .container-2, .container-3 {
     position: relative !important;
     z-index: 50;
-    top: 0 !important;
-    left: 0 !important;
     width: 100vw;
     height: 100vh;
+}
+
+.container-2 {
+    left: 15px !important;
+    top: 20px !important;
+}
+
+.container-3 {
+    left: 0 !important;
+    top: 0 !important;
 }
 
 .container-4 {
@@ -89,7 +97,7 @@ h1, h2, h3, h4, h5, strong, b {
 }
 
 .animate {
-    -webkit-animation: expand 1s ease-out;
+    -webkit-animation: expand 20s ease-out;
     display:block;
     transform:scale(1);
 }
@@ -684,7 +692,7 @@ h1, h2, h3, h4, h5, strong, b {
 }
 
 .darthVader {
-    margin-top: -18%;
+    bottom: 13%;
     margin-left: -18%;
     height: 67%;
     opacity: 0;
@@ -903,7 +911,7 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
     }
 
     #section2 h1 {
-        margin-top: 1.8em;
+        margin-top: 0.8em;
         font-size: 6.5em;
     }
 
@@ -965,7 +973,7 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
     }
 
     .social-img-div {
-        margin: 11% -15%;
+        margin: 18% -15%;
     }
 
     .social-img {
@@ -986,7 +994,7 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
     }
 
     .darthVader {
-        margin-top: -33%;
+        bottom: 7%;
         margin-left: -18%;
         height: 38%;
     }
@@ -994,7 +1002,7 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
     .speechDV {
         height: 28%;
         margin-left: 51%;
-        margin-top: 140%;
+        margin-top: 175%;
     }
 
 
@@ -1062,7 +1070,7 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
     }
 
     #section4 p {
-        margin: 13% 14%;
+        margin: 18% 6%;
         font-size: 3em;
     }
 
@@ -1072,7 +1080,7 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
     }
 
     .twitter-img {
-        margin-left: 12%;
+        margin-left: 25%;
     }
 
     .mobile-card h2 {
@@ -1087,7 +1095,11 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
 
     .mobile-phone-img {
         margin: 11.5% auto 0;
-        width: 80%;
+        width: 66%;
+    }
+
+    #section3 h1, #section4 h1 {
+        top: 3.9%;
     }
 
 }
@@ -1179,7 +1191,7 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
     }
 
     .darthVader {
-        margin-top: -48%;
+        bottom: 9%;
         margin-left: -18%;
         height: 44%;
     }
@@ -1229,7 +1241,7 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
 
     #section3 h1, #section4 h1 {
         font-size: 3.9em;
-        left: 10%;
+        left: 12%;
     }
 
 }
@@ -1282,7 +1294,7 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
     }
 
     .darthVader {
-        margin-top: -5%;
+        bottom: 13%;
         margin-left: -18%;
         height: 50%;
     }
@@ -1358,7 +1370,7 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
     }
 
     .darthVader {
-        margin-top: -13%;
+        bottom: 7%;
         margin-left: -18%;
         height: 55%;
     }
@@ -1455,6 +1467,7 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
 
     .phone-img {
         margin-left: 5%;
+        margin-top: 7%;
     }
 
     .fp-slidesNav {
@@ -1480,7 +1493,7 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
     }
 
     .darthVader {
-        margin-top: -18%;
+        bottom: 13%;
         margin-left: -18%;
         height: 67%;
     }
@@ -1496,7 +1509,7 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
 @media screen and (min-width:70em) {
     /* big landscape tablets, laptops, and desktops */
     html,body {
-        font-size: 10.8px;
+        font-size: 11px;
     }
 
     #section4 p {
@@ -1511,6 +1524,9 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
         font-size: 4em;
     }
 
+    .phone-img {
+        margin-top: 6%;
+    }
 
 }
 
@@ -1639,49 +1655,57 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
     html, body {
         font-size: 20px;
     }
-}
 
-@media screen and (min-width: 120em) {
-    html,body {
-        font-size: 22px;
-    }
-
-    #section2 h1, #section2 h3, #section2 p {
-        margin-left: 0;
-    }
-
-}
-
-@media screen and (min-width: 160em) {
-    html,body {
-        font-size: 30px;
-    }
-
-    #section2 h1, #section2 h3, #section2 p {
-        margin-left: 0.5rem;
-    }
-
-}
-
-@media screen and (min-width: 180em) {
-    html,body {
-        font-size: 34px;
-    }
-
-}
-
-@media screen and (min-width: 200em) {
-    html,body {
-        font-size: 36px;
+    #section3 h1, #section4 h1 {
+        top: 3.1%;
     }
 }
 
-@media screen and (min-width: 240em) {
-    html,body {
-        font-size: 44px;
+    @media screen and (min-width: 120em) {
+        html, body {
+            font-size: 22px;
+        }
+
+        #section2 h1, #section2 h3, #section2 p {
+            margin-left: 0;
+        }
+
     }
+
+    @media screen and (min-width: 160em) {
+        html, body {
+            font-size: 29px;
+        }
+
+        #section2 h1, #section2 h3, #section2 p {
+            margin-left: 0.5rem;
+        }
+
+    }
+
+    @media screen and (min-width: 180em) {
+        html, body {
+            font-size: 34px;
+        }
+
+    }
+
+    @media screen and (min-width: 200em) {
+        html, body {
+            font-size: 36px;
+        }
+    }
+
+    @media screen and (min-width: 240em) {
+        html, body {
+            font-size: 44px;
+        }
 
 }
 
-
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+    h1, h2, h3, h4, h5, h6, p, strong, b {
+        font-weight: 400 !important;
+    }
+}
 

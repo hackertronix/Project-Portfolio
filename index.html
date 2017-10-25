@@ -101,6 +101,45 @@
         <div class="slide" id="slide1" data-anchor="slideOne">
             <div class="layer container-3" data-depth="0.8">
                 <div class="card">
+                    <img src="images/murphy.png" class="phone-img">
+                    <div class="info-container">
+                        <div class="info-wrapper">
+                            <h2>
+                                Murphy
+                            </h2>
+                            <h3>
+                                Murphy is a Peer-to-Peer, decentralized ATM platform
+                                that allows users to issue localized cash request broadcast within their peer network.
+                                Upon request acceptance the balance is settled via a wire transfer to the remitter's bank.
+                                The app makes use of geolocation features for allowing users to find each other.
+                            </h3>
+                            <div class="group">
+                                <div class="left-icon">
+                                    <a target="_blank" href="http://github.com/Hackertronix/Project-Murphy">
+                                        <img src="images/checkOnGithub.png" class="github-googleplay-button">
+                                    </a>
+                                </div>
+                                <div class="right-icon">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-card">
+                    <h2>
+                        Murphy
+                    </h2>
+                    <a target="_blank" href="http://github.com/Hackertronix/Project-Murphy">
+                        <img src="images/github-white.png" class="mobile-button">
+                    </a>
+                    <img src="images/murphy.png" class="mobile-phone-img">
+                </div>
+            </div>
+        </div>
+        <div class="slide" id="slide2" data-anchor="slideTwo">
+            <div class="layer container-3" data-depth="0.8">
+                <div class="card">
                     <img src="images/cinematic-pixel.png" class="phone-img">
                     <div class="info-container">
                         <div class="info-wrapper">
@@ -138,7 +177,7 @@
                 </div>
             </div>
         </div>
-        <div class="slide" id="slide2" data-anchor="slideTwo">
+        <div class="slide" id="slide3" data-anchor="slideThree">
             <div class="layer container-3" data-depth="0.8">
                 <div class="card">
                     <img src="images/walldo-pixel.png" class="phone-img">
@@ -180,7 +219,7 @@
                 </div>
             </div>
         </div>
-        <div class="slide" id="slide3" data-anchor="slideThree">
+        <div class="slide" id="slide4" data-anchor="slideFour">
             <div class="layer container-3" data-depth="0.8">
                 <div class="card">
                     <img src="images/pantheon-pixel.png" class="phone-img">
@@ -229,7 +268,7 @@
                 </div>
             </div>
         </div>
-        <div class="slide" id="slide4" data-anchor="slideFour">
+        <div class="slide" id="slide5" data-anchor="slideFive">
             <div class="layer container-3" data-depth="0.8">
                 <div class="card">
                     <img src="images/gst-tracker-pixel.png" class="phone-img">
@@ -271,7 +310,7 @@
                 </div>
             </div>
         </div>
-        <div class="slide" id="slide5" data-anchor="slideFive">
+        <div class="slide" id="slide6" data-anchor="slideSix">
             <div class="layer container-3" data-depth="0.8">
                 <div class="card">
                     <img src="images/stock-hawk-pixel.png" class="phone-img">
@@ -450,13 +489,21 @@
                         })
                     });
 
-                   if(sliding) {
+                    if(sliding) {
                         id = setInterval(function () {
                             $.fn.fullpage.moveSlideRight();
                             indexSlide++;
                         }, 5000);
                     }
 
+                    $('.info-container, .phone-img').hover(function() {
+                        clearInterval(id);
+                    }, function() {
+                        id = setInterval(function () {
+                            $.fn.fullpage.moveSlideRight();
+                            indexSlide++;
+                        }, 5000);
+                    });
                 }
 
                 if (index === 4 || anchorLink === 'contact') {
@@ -476,14 +523,6 @@
             onLeave: function(index, nextIndex, direction){
                 clearInterval(id);
             },
-
-            onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex) {
-                var isFirst = direction === 'right' && nextSlideIndex > slideIndex + 1;
-                var isLast = direction === 'left' && slideIndex > nextSlideIndex + 1;
-                $(this).parent().toggleClass('no_transition', isFirst || isLast);
-                $(this).parent().toggleClass('no_transition', isFirst || isLast);
-            }
-
         });
 
         $("#main-heading").delay(2000).css("visibility","visible").typed({
@@ -696,7 +735,7 @@
                 if (flag === 7) {
                     clearInterval(id);
                 }
-            },500);
+            },2000);
         }
 
         function makeDiv(color, index, secId) {
