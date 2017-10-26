@@ -978,7 +978,7 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
 
     .social-img {
         height: 4.625em;
-        margin: 0 8.5% 0 0;
+        margin: 0 10.5% 0 0;
     }
 
     .twitter-img {
@@ -994,15 +994,15 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
     }
 
     .darthVader {
-        bottom: 7%;
+        bottom: 20%;
         margin-left: -18%;
         height: 38%;
     }
 
     .speechDV {
         height: 28%;
-        margin-left: 51%;
-        margin-top: 175%;
+        margin-left: 65%;
+        margin-top: 165%;
     }
 
 
@@ -1034,13 +1034,9 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
         font-size: 3em;
     }
 
-    .social-img {
-        height: 4.625em;
-        margin: 0 8.5% 0 0;
-    }
 
     .twitter-img {
-        margin-left: 25%;
+        margin-left: 21%;
     }
 
 }
@@ -1100,6 +1096,18 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
 
     #section3 h1, #section4 h1 {
         top: 3.9%;
+    }
+
+    .darthVader {
+        bottom: 12%;
+        margin-left: -18%;
+        height: 38%;
+    }
+
+    .speechDV {
+        height: 28%;
+        margin-left: 32%;
+        margin-top: 117%;
     }
 
 }
