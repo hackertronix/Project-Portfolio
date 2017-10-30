@@ -841,7 +841,7 @@ h1, h2, h3, h4, h5, strong, b {
     margin: 0 auto;
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 1.25),
+/*@media only screen and (-webkit-min-device-pixel-ratio: 1.25),
 only screen and ( min-device-pixel-ratio: 1.25),
 only screen and ( min-resolution: 200dpi),
 only screen and ( min-resolution: 1.25dppx){
@@ -849,7 +849,7 @@ only screen and ( min-resolution: 1.25dppx){
     html,body{
         -webkit-font-smoothing: subpixel-antialiased;
     }
-}
+}*/
 
 /*safari hacks */
 
@@ -1711,9 +1711,4 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
 
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2) {
-    h1, h2, h3, h4, h5, h6, p, strong, b {
-        font-weight: 400 !important;
-    }
-}
 
