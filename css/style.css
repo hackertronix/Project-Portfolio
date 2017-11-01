@@ -80,6 +80,7 @@ h1, h2, h3, h4, h5, strong, b {
 .container-3 {
     left: 0 !important;
     top: 0 !important;
+    pointer-events: auto !important;
 }
 
 .container-4 {
