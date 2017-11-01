@@ -98,7 +98,7 @@ h1, h2, h3, h4, h5, strong, b {
 }
 
 .animate {
-    -webkit-animation: expand 20s ease-out;
+    -webkit-animation: expand 7s ease-out;
     display:block;
     transform:scale(1);
 }
