@@ -56,7 +56,7 @@
 <div id="fullpage" style="-webkit-transform: translate3d(0px, 0px, 0px);">
 
     <div class="section" id="section1">
-        <div class="container-1">
+        <div class="layer container-1" data-depth="0">
             <div class="main-heading">
                 <span id="main-heading"></span>
             </div>
@@ -903,7 +903,7 @@
 
         ];
 
-        /*var resizeTimer;
+        var resizeTimer;
         $(window).resize(function() {
             clearTimeout(resizeTimer);
             resizeTimer = setTimeout(respValueCalculator, 100);
@@ -919,7 +919,7 @@
                 resp = 0;
             }
         }
-*/
+
         function callMakeDiv(color,secId) {
             var flag=0,resp=0;
             if (window.innerWidth < 480) {
