@@ -10,6 +10,25 @@ html,body{
     -moz-osx-font-smoothing: grayscale;
 }
 
+.fp-controlArrow {
+    position: absolute;
+    width: 128px !important; /* This can be added here so you don't have to set a width and height 2 times for each arrow, this will create one width for both arrows */
+    height: 128px; /* This does the same as above */
+    margin-top:-64px; /* This value must always be half of the height - This does the same as above */
+    z-index: 4;
+    top: 55%;
+    cursor: pointer;
+    border-width: 0 !important;
+}
+
+.fp-controlArrow.fp-prev {
+    left:60px;
+    background: url("../images/combined-shape.svg") no-repeat;
+}
+.fp-controlArrow.fp-next {
+    right:-60px;
+    background: url("../images/combined-shape-copy.svg") no-repeat;
+}
 
 /*to fix safari bold font crap*/
 h1, h2, h3, h4, h5, strong, b {
@@ -947,6 +966,10 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
         display: block;
     }
 
+    .fp-controlArrow {
+        display: none;
+    }
+
     .card {
         display: none;
     }
@@ -1464,6 +1487,10 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
 
     .mobile-card {
         display: none;
+    }
+
+    .fp-controlArrow {
+        display: block;
     }
 
     .card {
