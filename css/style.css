@@ -23,11 +23,11 @@ html,body{
 
 .fp-controlArrow.fp-prev {
     left:60px;
-    background: url("../images/combined-shape.svg") no-repeat;
+    background: url("../images/left-arrow.png") no-repeat;
 }
 .fp-controlArrow.fp-next {
     right:-60px;
-    background: url("../images/combined-shape-copy.svg") no-repeat;
+    background: url("../images/right-arrow.png") no-repeat;
 }
 
 /*to fix safari bold font crap*/
