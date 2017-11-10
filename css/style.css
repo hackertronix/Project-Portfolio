@@ -545,6 +545,7 @@ h1, h2, h3, h4, h5, strong, b {
     font-family: Graphik-Semibold,Roboto;
     font-weight: 600;
     margin-top: 0;
+    margin-bottom: 0.5em;
 }
 
 #section2 h3 {
