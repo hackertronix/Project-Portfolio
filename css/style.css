@@ -93,7 +93,7 @@ h1, h2, h3, h4, h5, strong, b {
 
 .container-2 {
     left: 15px !important;
-    top: 20px !important;
+    top: 10px !important;
 }
 
 .container-3 {
@@ -802,8 +802,8 @@ h1, h2, h3, h4, h5, strong, b {
 
 .mobile-phone-img {
     display: block;
-    margin: 3% auto 0;
-    width: 70%;
+    margin: 30% auto 0 !important;
+    width: 90% !important;
     opacity: 0;
 }
 
