@@ -702,7 +702,7 @@ h1, h2, h3, h4, h5, strong, b {
     float: right;
     width: 51%;
     position: relative;
-    z-index: 20;
+    z-index: 50;
 }
 
 .speechDV {
