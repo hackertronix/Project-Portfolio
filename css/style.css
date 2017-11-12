@@ -967,8 +967,22 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
         display: block;
     }
 
-    .fp-controlArrow {
+    /*.fp-controlArrow {
         display: none;
+    }*/
+
+
+    .fp-controlArrow.fp-prev {
+        left:25px;
+        background: url("../images/left-arrow-phone.png") no-repeat;
+    }
+    .fp-controlArrow.fp-next {
+        right:-95px;
+        background: url("../images/right-arrow-phone.png") no-repeat;
+    }
+
+    .fp-controlArrow {
+        top: 70%;
     }
 
     .card {
@@ -1489,9 +1503,24 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
     .mobile-card {
         display: none;
     }
+    /*
 
     .fp-controlArrow {
         display: block;
+    }
+    */
+
+    .fp-controlArrow.fp-prev {
+        left:60px;
+        background: url("../images/left-arrow.png") no-repeat;
+    }
+    .fp-controlArrow.fp-next {
+        right:-60px;
+        background: url("../images/right-arrow.png") no-repeat;
+    }
+
+    .fp-controlArrow {
+        top: 55%;
     }
 
     .card {
