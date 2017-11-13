@@ -1522,6 +1522,7 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
 
     .fp-controlArrow {
         top: 55%;
+        transform: scale(1);
     }
 
     .card {
