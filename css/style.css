@@ -973,16 +973,17 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
 
 
     .fp-controlArrow.fp-prev {
-        left:25px;
-        background: url("../images/left-arrow-phone.png") no-repeat;
+        left:-15px;
+        background: url("../images/left-arrow-copy@3x.png") no-repeat;
     }
     .fp-controlArrow.fp-next {
-        right:-95px;
-        background: url("../images/right-arrow-phone.png") no-repeat;
+        right:-60px;
+        background: url("../images/right-arrow@3x.png") no-repeat;
     }
 
     .fp-controlArrow {
         top: 80%;
+        transform: scale(0.5);
     }
 
     .card {
