@@ -1,4 +1,5 @@
-html,body{
+html,
+body {
     padding: 0;
     margin: 0;
     height: 100%;
@@ -12,9 +13,12 @@ html,body{
 
 .fp-controlArrow {
     position: absolute;
-    width: 128px !important; /* This can be added here so you don't have to set a width and height 2 times for each arrow, this will create one width for both arrows */
-    height: 128px; /* This does the same as above */
-    margin-top:-64px; /* This value must always be half of the height - This does the same as above */
+    width: 128px !important;
+    /* This can be added here so you don't have to set a width and height 2 times for each arrow, this will create one width for both arrows */
+    height: 128px;
+    /* This does the same as above */
+    margin-top: -64px;
+    /* This value must always be half of the height - This does the same as above */
     z-index: 4;
     top: 55%;
     cursor: pointer;
@@ -22,16 +26,25 @@ html,body{
 }
 
 .fp-controlArrow.fp-prev {
-    left:60px;
+    left: 60px;
     background: url("../images/left-arrow.png") no-repeat;
 }
+
 .fp-controlArrow.fp-next {
-    right:-60px;
+    right: -60px;
     background: url("../images/right-arrow.png") no-repeat;
 }
 
+
 /*to fix safari bold font crap*/
-h1, h2, h3, h4, h5, strong, b {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+strong,
+b {
     font-weight: 400;
 }
 
@@ -39,8 +52,8 @@ h1, h2, h3, h4, h5, strong, b {
     transition: none !important;
 }
 
-
-.fp-section.fp-table, .fp-slide.fp-table {
+.fp-section.fp-table,
+.fp-slide.fp-table {
     display: block;
     table-layout: fixed;
     width: 100%;
@@ -54,7 +67,7 @@ h1, h2, h3, h4, h5, strong, b {
     transform: scale(0);
 }
 
-.position-div{
+.position-div {
     position: absolute;
     border-radius: 50%;
     display: none;
@@ -69,7 +82,8 @@ h1, h2, h3, h4, h5, strong, b {
     }
 }
 
-.section, .slick-carousel {
+.section,
+.slick-carousel {
     overflow: hidden;
     width: 100vw;
     height: 100vh;
@@ -84,7 +98,8 @@ h1, h2, h3, h4, h5, strong, b {
     height: 100vh;
 }
 
-.container-2, .container-3 {
+.container-2,
+.container-3 {
     position: relative !important;
     z-index: 50;
     width: 100vw;
@@ -94,6 +109,12 @@ h1, h2, h3, h4, h5, strong, b {
 .container-2 {
     left: 15px !important;
     top: 10px !important;
+    pointer-events: auto;
+    z-index: 80;
+}
+
+#certificate {
+    cursor: pointer;
 }
 
 .container-3 {
@@ -119,22 +140,21 @@ h1, h2, h3, h4, h5, strong, b {
 
 .animate {
     -webkit-animation: expand 7s ease-out;
-    display:block;
-    transform:scale(1);
+    display: block;
+    transform: scale(1);
 }
 
 @-webkit-keyframes expand {
-    0%{
-        -webkit-transform: scale(0,0);
+    0% {
+        -webkit-transform: scale(0, 0);
     }
-
-    100%{
-        -webkit-transform: scale(1,1);
+    100% {
+        -webkit-transform: scale(1, 1);
     }
 }
 
-.main-heading{
-    text-align:left;
+.main-heading {
+    text-align: left;
     height: 1.4em;
     z-index: 50;
     position: relative;
@@ -155,7 +175,7 @@ h1, h2, h3, h4, h5, strong, b {
     position: relative;
     text-align: left;
     font-size: 4em;
-    font-family: Graphik-Semibold,Roboto;
+    font-family: Graphik-Semibold, Roboto;
     color: #ffffff;
     font-weight: 600;
     top: 24% !important;
@@ -185,8 +205,7 @@ h1, h2, h3, h4, h5, strong, b {
 #circle-wrapper-3-3,
 #circle-wrapper-1-4,
 #circle-wrapper-2-4,
-#circle-wrapper-3-4
-{
+#circle-wrapper-3-4 {
     position: absolute;
     width: 100vw;
     height: 100vh;
@@ -195,22 +214,21 @@ h1, h2, h3, h4, h5, strong, b {
 #circle-wrapper-1-1,
 #circle-wrapper-1-2,
 #circle-wrapper-1-3,
-#circle-wrapper-1-4
-{
+#circle-wrapper-1-4 {
     z-index: 15;
 }
 
 #circle-wrapper-2-1,
 #circle-wrapper-2-2,
 #circle-wrapper-2-3,
-#circle-wrapper-2-4{
+#circle-wrapper-2-4 {
     z-index: 10;
 }
 
 #circle-wrapper-3-1,
 #circle-wrapper-3-2,
 #circle-wrapper-3-3,
-#circle-wrapper-3-4{
+#circle-wrapper-3-4 {
     z-index: 5;
 }
 
@@ -218,8 +236,10 @@ h1, h2, h3, h4, h5, strong, b {
     position: absolute;
     top: 5% !important;
     left: 3% !important;
-    height: 27px/*1.6875em*/;
-    width: 35px/*2.1875em*/;
+    height: 27px/*1.6875em*/
+    ;
+    width: 35px/*2.1875em*/
+    ;
     cursor: pointer;
     z-index: 100;
     -webkit-transition: opacity .25s ease;
@@ -354,14 +374,12 @@ h1, h2, h3, h4, h5, strong, b {
     font-weight: 600;
     opacity: 0.5;
     font-size: 1.2em;
-
     -webkit-animation: remove-hover-animation 0.2s ease-in forwards;
-    -o-animation:  remove-hover-animation 0.2s ease-in forwards;
+    -o-animation: remove-hover-animation 0.2s ease-in forwards;
     -moz-animation: remove-hover-animation 0.2s ease-in forwards;
     -ms-animation: remove-hover-animation 0.2s ease-in forwards;
     animation: remove-hover-animation 0.2s ease-in forwards;
 }
-
 
 @-webkit-keyframes fadeInLeft {
     0% {
@@ -385,12 +403,14 @@ h1, h2, h3, h4, h5, strong, b {
     }
 }
 
-.overlay ul li a:hover, .overlay ul li a:focus, .overlay ul li a:active {
+.overlay ul li a:hover,
+.overlay ul li a:focus,
+.overlay ul li a:active {
     -webkit-animation: hover-animation 0.2s ease-out forwards;
-    -o-animation:  hover-animation 0.2s ease-out forwards;
+    -o-animation: hover-animation 0.2s ease-out forwards;
     -moz-animation: hover-animation 0.2s ease-out forwards;
-    -ms-animation:hover-animation 0.2s ease-out forwards;
-    animation:  hover-animation 0.2s ease-out forwards;
+    -ms-animation: hover-animation 0.2s ease-out forwards;
+    animation: hover-animation 0.2s ease-out forwards;
 }
 
 @keyframes hover-animation {
@@ -398,7 +418,6 @@ h1, h2, h3, h4, h5, strong, b {
         font-size: 1.2em;
         opacity: 0.5;
     }
-
     100% {
         font-size: 1.5em;
         opacity: 1;
@@ -410,7 +429,6 @@ h1, h2, h3, h4, h5, strong, b {
         font-size: 1.5em;
         opacity: 1;
     }
-
     100% {
         font-size: 1.2em;
         opacity: 0.5;
@@ -418,23 +436,22 @@ h1, h2, h3, h4, h5, strong, b {
 }
 
 .creepy {
-    -webkit-animation:creepy-animation 3.65s forwards;
-    -ms-animation:creepy-animation 3.65s forwards;
-    -o-animation:creepy-animation 3.65s forwards;
-    -moz-animation:creepy-animation 3.65s forwards;
-    animation:creepy-animation 3.65s forwards;
+    -webkit-animation: creepy-animation 3.65s forwards;
+    -ms-animation: creepy-animation 3.65s forwards;
+    -o-animation: creepy-animation 3.65s forwards;
+    -moz-animation: creepy-animation 3.65s forwards;
+    animation: creepy-animation 3.65s forwards;
 }
 
 @keyframes creepy-animation {
-    0%{
-        -webkit-transform:translateY(100%);
-        transform:translateY(100%);
+    0% {
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
         opacity: 0;
-
     }
-    100%{
-        -webkit-transform:translateY(0);
-        transform:translateY(0);
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
         opacity: 1;
     }
 }
@@ -445,15 +462,12 @@ h1, h2, h3, h4, h5, strong, b {
         transform: scale(0.1) rotate(75deg);
         transform-origin: center bottom;
     }
-
     50% {
         transform: rotate(-25deg);
     }
-
     70% {
         transform: rotate(3deg);
     }
-
     100% {
         opacity: 1;
         transform: scale(1);
@@ -461,71 +475,72 @@ h1, h2, h3, h4, h5, strong, b {
 }
 
 .jackInBox {
-    -webkit-animation: jackInBox 1.2s  forwards;
-    -ms-animation: jackInBox 1.2s  forwards;
-    -o-animation: jackInBox 1.2s  forwards;
-    -moz-animation: jackInBox 1.2s  forwards;
-    animation: jackInBox 1.2s  forwards;
+    -webkit-animation: jackInBox 1.2s forwards;
+    -ms-animation: jackInBox 1.2s forwards;
+    -o-animation: jackInBox 1.2s forwards;
+    -moz-animation: jackInBox 1.2s forwards;
+    animation: jackInBox 1.2s forwards;
 }
 
 .come-in {
-    -ms-transform:translateY(85px);
-    -moz-transform:translateY(85px);
-    -o-transform:translateY(85px);
-    -webkit-transform:translateY(85px);
-    transform:translateY(85px);
-
-    -webkit-animation:come-in 0.65s ease-out forwards;
-    -ms-animation:come-in 0.65s ease-out forwards;
-    -o-animation:come-in 0.65s ease-out forwards;
-    -moz-animation:come-in 0.65s ease-out forwards;
-    animation:come-in 0.65s ease-out forwards;
-
+    -ms-transform: translateY(85px);
+    -moz-transform: translateY(85px);
+    -o-transform: translateY(85px);
+    -webkit-transform: translateY(85px);
+    transform: translateY(85px);
+    -webkit-animation: come-in 0.65s ease-out forwards;
+    -ms-animation: come-in 0.65s ease-out forwards;
+    -o-animation: come-in 0.65s ease-out forwards;
+    -moz-animation: come-in 0.65s ease-out forwards;
+    animation: come-in 0.65s ease-out forwards;
     opacity: 0;
 }
 
 @-webkit-keyframes come-in {
     to {
-        -webkit-transform:translateY(0);
-        transform:translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
         opacity: 1;
     }
 }
 
 @-o-keyframes come-in {
     to {
-        -o-transform:translateY(0);
-        transform:translateY(0);
+        -o-transform: translateY(0);
+        transform: translateY(0);
         opacity: 1;
     }
 }
 
 @-moz-keyframes come-in {
     to {
-        -moz-transform:translateY(0);
-        transform:translateY(0);
+        -moz-transform: translateY(0);
+        transform: translateY(0);
         opacity: 1;
     }
 }
 
 @-ms-keyframes come-in {
     to {
-        -ms-transform:translateY(0);
-        transform:translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
         opacity: 1;
     }
 }
 
-
-@keyframes come-in{
-    to{
-        transform:translateY(0);
+@keyframes come-in {
+    to {
+        transform: translateY(0);
         opacity: 1;
     }
 }
 
-
-#section2 h1, #section2 h3, #section2 p, #section3 h1,#section4 h1, #section4 p{
+#section2 h1,
+#section2 h3,
+#section2 p,
+#section3 h1,
+#section4 h1,
+#section4 p {
     position: relative;
     z-index: 20;
     display: block;
@@ -535,14 +550,16 @@ h1, h2, h3, h4, h5, strong, b {
     color: #FFFFFF;
 }
 
-#section2 h1, #section2 h3, #section2 p{
+#section2 h1,
+#section2 h3,
+#section2 p {
     opacity: 0;
     margin-left: 0.5rem;
 }
 
 #section2 h1 {
     font-size: 8em;
-    font-family: Graphik-Semibold,Roboto;
+    font-family: Graphik-Semibold, Roboto;
     font-weight: 600;
     margin-top: 0;
     margin-bottom: 0.5em;
@@ -550,7 +567,7 @@ h1, h2, h3, h4, h5, strong, b {
 
 #section2 h3 {
     font-size: 3.1em;
-    font-family: Graphik-Semibold,Roboto;
+    font-family: Graphik-Semibold, Roboto;
     font-weight: 600;
     top: 0;
 }
@@ -563,7 +580,8 @@ h1, h2, h3, h4, h5, strong, b {
     line-height: 1.66666667em;
 }
 
-#section2,#section4{
+#section2,
+#section4 {
     background-color: #1f3264;
 }
 
@@ -628,12 +646,13 @@ h1, h2, h3, h4, h5, strong, b {
     z-index: 49;
 }
 
-.info-container h2, .info-container h3 {
+.info-container h2,
+.info-container h3 {
     color: #1f3264;
 }
 
 .info-container h2 {
-    font-family: Graphik-Semibold, Roboto ;
+    font-family: Graphik-Semibold, Roboto;
     font-size: 2em;
     margin-bottom: 4%;
 }
@@ -645,7 +664,7 @@ h1, h2, h3, h4, h5, strong, b {
     font-weight: normal;
     margin-bottom: 4%;
     text-align: justify;
-    width:70%;
+    width: 70%;
 }
 
 .left-icon {
@@ -682,7 +701,8 @@ h1, h2, h3, h4, h5, strong, b {
     width: 72%;
 }
 
-#section4 h1,#section3 h1{
+#section4 h1,
+#section3 h1 {
     visibility: hidden;
     position: absolute;
     font-family: Graphik-Semibold, Roboto;
@@ -721,29 +741,28 @@ h1, h2, h3, h4, h5, strong, b {
 }
 
 .creepy-side {
-    -webkit-animation:creepy-animation-side 3.65s forwards;
-    -ms-animation:creepy-animation-side 3.65s forwards;
-    -o-animation:creepy-animation-side 3.65s forwards;
-    -moz-animation:creepy-animation-side 3.65s forwards;
-    animation:creepy-animation-side 3.65s forwards;
+    -webkit-animation: creepy-animation-side 3.65s forwards;
+    -ms-animation: creepy-animation-side 3.65s forwards;
+    -o-animation: creepy-animation-side 3.65s forwards;
+    -moz-animation: creepy-animation-side 3.65s forwards;
+    animation: creepy-animation-side 3.65s forwards;
 }
 
 @keyframes creepy-animation-side {
-    0%{
-        -webkit-transform:translateX(-100%) rotate(12deg);
-        transform:translateX(-100%) rotate(12deg);
+    0% {
+        -webkit-transform: translateX(-100%) rotate(12deg);
+        transform: translateX(-100%) rotate(12deg);
         opacity: 0;
-
     }
-    100%{
-        -webkit-transform:translateX(0) rotate(12deg);
-        transform:translateX(0) rotate(12deg);
+    100% {
+        -webkit-transform: translateX(0) rotate(12deg);
+        transform: translateX(0) rotate(12deg);
         opacity: 1;
     }
 }
 
 .group:after {
-    content:"";
+    content: "";
     display: table;
     clear: both;
 }
@@ -791,12 +810,14 @@ h1, h2, h3, h4, h5, strong, b {
     margin-left: 8%;
 }
 
-.fp-controlArrow, .fp-slidesNav {
+.fp-controlArrow,
+.fp-slidesNav {
     z-index: 50 !important;
     pointer-events: auto;
 }
 
-.fp-slides,.slide {
+.fp-slides,
+.slide {
     z-index: 50;
 }
 
@@ -863,6 +884,7 @@ h1, h2, h3, h4, h5, strong, b {
     margin: 0 auto;
 }
 
+
 /*@media only screen and (-webkit-min-device-pixel-ratio: 1.25),
 only screen and ( min-device-pixel-ratio: 1.25),
 only screen and ( min-resolution: 200dpi),
@@ -873,213 +895,185 @@ only screen and ( min-resolution: 1.25dppx){
     }
 }*/
 
+
 /*safari hacks */
 
-_::-webkit-full-page-media, _:future, :root .info-container {
+_::-webkit-full-page-media,
+_:future,
+ :root .info-container {
     right: -9em;
 }
 
-_::-webkit-full-page-media, _:future, :root .github-googleplay-button {
+_::-webkit-full-page-media,
+_:future,
+ :root .github-googleplay-button {
     height: 4em;
 }
+
 
 /* firefox hacks */
 
 @-moz-document url-prefix() {
-    #section4 h1,#section3 h1 {
+    #section4 h1,
+    #section3 h1 {
         top: 4.6%;
     }
-
     .info-container {
         right: -9em;
     }
-
     .github-googleplay-button {
         height: 4em;
     }
 }
 
+
 /* media queries */
 
-@media screen and (min-width:20em)  {
+@media screen and (min-width:20em) {
     /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
-    html,body {
+    html,
+    body {
         font-size: 5.8px;
     }
-
-    .main-heading{
+    .main-heading {
         top: 28%;
         font-size: 12em;
         left: 9%;
     }
-
     #welcome-msg {
         top: 30%!important;
         left: 10% !important;
     }
-
     .down-arrow {
         top: 75%;
     }
-
     .overlay nav {
         font-size: 6.1em;
         letter-spacing: 0em;
         right: 0;
     }
-
-    #section2 h1, #section2 h3, #section2 p {
+    #section2 h1,
+    #section2 h3,
+    #section2 p {
         margin-left: -1.5rem;
     }
-
     #section2 h1 {
         margin-top: 0.8em;
         font-size: 6.5em;
     }
-
     #section2 h3 {
         margin-top: 2em;
         font-size: 3.1em;
     }
-
-
     #section2 p {
         font-size: 2.1em;
     }
-
     .force {
         height: 35%;
         top: 63%;
         left: -12%;
     }
-
     .speech {
         height: 21%;
         left: 33%;
         top: 60%;
     }
-
     .fp-slidesNav {
         display: none;
     }
-
     .mobile-card {
         display: block;
     }
-
     /*.fp-controlArrow {
         display: none;
     }*/
-
-
     .fp-controlArrow.fp-prev {
-        left:-15px;
+        left: -15px;
         background: url("../images/left-arrow-copy@3x.png") no-repeat;
     }
     .fp-controlArrow.fp-next {
-        right:-60px;
+        right: -60px;
         background: url("../images/right-arrow@3x.png") no-repeat;
     }
-
     .fp-controlArrow {
         top: 80%;
         transform: scale(0.5);
     }
-
     .card {
         display: none;
     }
-
-    #section3 h1, #section4 h1 {
+    #section3 h1,
+    #section4 h1 {
         font-size: 4em;
         left: 19%;
         top: 5.7%;
     }
-
-
     .left,
     .right {
         float: none;
         width: 100%;
     }
-
     .container-4 {
         top: 0 !important;
         left: 0 !important;
     }
-
     #section4 p {
         margin: 18% 1%;
         font-size: 3em;
     }
-
     .social-img-div {
         margin: 18% -15%;
     }
-
     .social-img {
         height: 4.625em;
         margin: 0 10.5% 0 0;
     }
-
     .twitter-img {
         margin-left: 20%;
     }
-
     .svg-size {
         height: 4.8em;
     }
-
     .container-5 {
         width: 50%;
     }
-
     .darthVader {
         bottom: 16%;
         margin-left: -18%;
         height: 38%;
     }
-
     .speechDV {
         height: 28%;
         margin-left: 65%;
         margin-top: 165%;
     }
-
-
     .mobile-button-container {
         width: 95%;
     }
-
     .text-mobile {
         display: block !important;
     }
-
     .text-other {
         display: none !important;
     }
-
     .button_container {
         left: 5% !important;
     }
 }
 
-@media screen and (min-width:22.5em)  {
+@media screen and (min-width:22.5em) {
     /* smartphones, Android phones, landscape iPhone */
-    html,body {
+    html,
+    body {
         font-size: 6.2px;
     }
-
     #section4 p {
         margin: 23% 4% 3%;
         font-size: 3em;
     }
-
-
     .twitter-img {
         margin-left: 21%;
     }
-
 }
 
 @media screen and (min-width:24em) {
@@ -1087,420 +1081,346 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
         font-size: 6em;
         margin-top: 33%;
     }
-
     .mobile-button {
         width: 50%;
         margin: 1% auto 0;
     }
-
     .mobile-phone-img {
         margin: 2.5% auto 0;
         width: 85%;
     }
-
 }
 
-@media screen and (min-width:25.75em)  {
+@media screen and (min-width:25.75em) {
     /* smartphones, Android phones, landscape iPhone */
-    html,body {
+    html,
+    body {
         font-size: 6.5px;
     }
-
     #section4 p {
         margin: 18% 6%;
         font-size: 3em;
     }
-
     .social-img {
         height: 4.625em;
         margin: 0 8% 0 0;
     }
-
     .twitter-img {
         margin-left: 25%;
     }
-
     .mobile-card h2 {
         font-size: 6em;
         margin-top: 30%;
     }
-
     .mobile-button {
         width: 50%;
         margin: 1% auto 0;
     }
-
     .mobile-phone-img {
         margin: 11.5% auto 0;
         width: 66%;
     }
-
-    #section3 h1, #section4 h1 {
+    #section3 h1,
+    #section4 h1 {
         top: 4.9%;
     }
-
     .darthVader {
         bottom: 14%;
         margin-left: -18%;
         height: 38%;
     }
-
     .speechDV {
         height: 28%;
         margin-left: 59%;
         margin-top: 160%;
     }
-
 }
 
-
-
-@media screen and (min-width:30em)  {
+@media screen and (min-width:30em) {
     /* smartphones, Android phones, landscape iPhone */
-    html,body {
+    html,
+    body {
         font-size: 6.8px;
     }
-
     .force {
         height: 38%;
         top: 63%;
         left: -12%;
     }
-
     .speech {
         height: 20%;
         left: 28%;
         top: 63%;
     }
-
     #section4 p {
         margin: 13% 22%;
         font-size: 3em;
     }
-
     .social-img-div {
         margin: 14% 19%;
     }
-
     .social-img {
         height: 4.625em;
         margin: 0 8.5% 0 0;
     }
-
     .twitter-img {
         margin-left: 17%;
     }
-
     .mobile-card h2 {
         font-size: 6em;
         margin-top: 20%;
     }
-
     .mobile-button {
         width: 43%;
         margin: 1% auto 0;
     }
-
     .mobile-phone-img {
         margin: 11.5% auto 0;
         width: 60%;
     }
-
-    #section3 h1, #section4 h1 {
+    #section3 h1,
+    #section4 h1 {
         font-size: 3.9em;
         left: 12%;
     }
-
     .text-mobile {
         display: none !important;
     }
-
     .text-other {
         display: block !important;
     }
-
 }
 
-@media screen and (min-width:37.5em)  {
+@media screen and (min-width:37.5em) {
     /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
-    html,body {
+    html,
+    body {
         font-size: 7.5px;
     }
-
     .force {
         height: 40%;
         top: 60%;
         left: 52%;
     }
-
     .speech {
         height: 28%;
         left: 68%;
         top: 40%;
     }
-
     .darthVader {
         bottom: 9%;
         margin-left: -18%;
         height: 44%;
     }
-
     .speechDV {
         height: 32%;
         margin-left: 39%;
         margin-top: 106%;
     }
-
     #section4 p {
         font-size: 3em;
         margin: 8% 22%;
     }
-
     .social-img {
         height: 4.625em;
         margin: 0 9.5% 0 0;
     }
-
     .twitter-img {
         margin-left: 17%;
     }
-
     .mobile-card h2 {
         font-size: 5em;
         margin-top: 11%;
     }
-
     .mobile-button {
         width: 40%;
         margin: 1% auto 0;
     }
-
     .mobile-phone-img {
         margin: 2.5% auto 0;
         width: 65%;
     }
-
     .mobile-button-container {
         width: 75%;
     }
-
     .down-arrow {
         top: 83%;
     }
-
-    #section3 h1, #section4 h1 {
+    #section3 h1,
+    #section4 h1 {
         font-size: 3.9em;
         left: 12%;
     }
-
 }
 
 @media screen and (min-width: 42em) {
     .social-img {
         margin: 0 11% 0 0;
     }
-
     .twitter-img {
         margin-left: 17%;
     }
-
     #section4 p {
         font-size: 3.5em;
     }
-
     .mobile-card h2 {
         font-size: 5em;
         margin-top: 11%;
     }
-
     .mobile-button {
         width: 30%;
         margin: 1% auto 0;
     }
-
     .mobile-phone-img {
         margin: 2.5% auto 0;
         width: 55%;
     }
-
 }
 
-
 @media screen and (min-width:48em) {
-    html,body {
+    html,
+    body {
         font-size: 8px;
     }
-
     #section4 p {
         font-size: 2.8em;
         margin: 15% auto;
     }
-
     .speechDV {
         height: 40%;
         margin-left: 27%;
         margin-top: 50%;
     }
-
     .darthVader {
         bottom: 13%;
         margin-left: -18%;
         height: 50%;
     }
-
     .container-4 {
         top: 9% !important;
         left: 53% !important;
     }
-
     .container-5 {
         width: 100%;
     }
-
     .left {
         width: 49%;
         float: left;
     }
-
     .right {
         width: 51%;
         float: right;
     }
-
     .social-img-div {
         margin: 0;
     }
-
     .social-img {
         height: 3.625em;
         margin: 0 9% 0 0;
     }
-
     .svg-size {
         height: 3.8em;
     }
-
     .twitter-img {
         margin-left: 8%;
     }
-
-
     .mobile-phone-img {
         margin: 2.5% auto 0;
         width: 50%;
     }
-
     .mobile-button-container {
         width: 60%;
     }
-
 }
 
-@media screen and (min-width:50em)  {
+@media screen and (min-width:50em) {
     /* tablet, landscape iPad, lo-res laptops ands desktops */
-    html, body {
+    html,
+    body {
         font-size: 9px;
     }
-
     .force {
         top: 60%;
         left: 52%;
     }
-
     .speech {
         left: 70%;
         top: 48%;
     }
-
     .speechDV {
         height: 45%;
         margin-left: 27%;
         margin-top: 32%;
     }
-
     .darthVader {
         bottom: 7%;
         margin-left: -18%;
         height: 55%;
     }
-
-    #section3 h1, #section4 h1 {
+    #section3 h1,
+    #section4 h1 {
         font-size: 3em;
         left: 9%;
     }
-
     #section4 p {
         font-size: 2.7em;
     }
-
     .mobile-card h2 {
         font-size: 5em;
         margin-top: 11%;
     }
-
     .mobile-button {
         width: 25%;
         margin: 1% auto 0;
     }
-
     .mobile-phone-img {
         margin: 2.5% auto 0;
         width: 45%;
     }
-
     .overlay nav {
         font-size: 4em;
     }
-
     .button_container {
         left: 3% !important;
     }
-
 }
-
 
 @media screen and (min-width:55em) {
     .mobile-card h2 {
         font-size: 5em;
         margin-top: 10%;
     }
-
     .mobile-button {
         width: 28%;
         margin: 1% auto 0;
     }
-
     .mobile-phone-img {
         margin: 2.5% auto 0;
         width: 40%;
     }
-
-    #section3 h1, #section4 h1 {
+    #section3 h1,
+    #section4 h1 {
         font-size: 2.9em;
         left: 8.5%;
     }
 }
 
-
 @media screen and (min-width:64em) {
     /* big landscape tablets, laptops, and desktops */
-    html,body {
+    html,
+    body {
         font-size: 10.5px;
     }
-
     .force {
         height: 48%;
         top: 57%;
         left: 52%;
     }
-
     .speech {
         height: 35%;
         left: 70%;
         top: 30%;
     }
-
-
     .mobile-card {
         display: none;
     }
@@ -1510,120 +1430,100 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
         display: block;
     }
     */
-
     .fp-controlArrow.fp-prev {
-        left:60px;
+        left: 60px;
         background: url("../images/left-arrow.png") no-repeat;
     }
     .fp-controlArrow.fp-next {
-        right:-60px;
+        right: -60px;
         background: url("../images/right-arrow.png") no-repeat;
     }
-
     .fp-controlArrow {
         top: 55%;
         transform: scale(1);
     }
-
     .card {
         display: block;
     }
-
     .info-container {
-        width:70%;
+        width: 70%;
         left: 22%;
     }
-
     .phone-img {
         margin-left: 5%;
         margin-top: 7%;
     }
-
     .fp-slidesNav {
         display: block;
     }
-
     .info-container h2 {
         font-size: 3em;
     }
-
     .info-container h3 {
         font-size: 1.7em;
     }
-
     #section4 p {
         font-size: 2.4em;
     }
-
     .speechDV {
         height: 52%;
         margin-left: 27%;
         margin-top: 17%;
     }
-
     .darthVader {
         bottom: 13%;
         margin-left: -18%;
         height: 67%;
     }
-
-    #section3 h1, #section4 h1 {
+    #section3 h1,
+    #section4 h1 {
         font-size: 2.8em;
         left: 7.5%;
         top: 3.7%;
     }
-
 }
 
 @media screen and (min-width:70em) {
     /* big landscape tablets, laptops, and desktops */
-    html,body {
+    html,
+    body {
         font-size: 11px;
     }
-
     #section4 p {
         font-size: 2.6em;
     }
-
     .card {
         display: block;
     }
-
     .overlay nav {
         font-size: 4em;
     }
-
     .phone-img {
         margin-top: 6%;
     }
-
 }
-
 
 @media screen and (min-width:80em) {
     /*********defaukts******/
-    html,body {
+    html,
+    body {
         font-size: 15px;
     }
-
     .speech {
         left: 70%;
         top: 30%;
         height: 41%;
     }
-
-    .main-heading{
+    .main-heading {
         top: 24%;
         font-size: 10em;
         left: 9%;
     }
-
     #welcome-msg {
         top: 24%!important;
         left: 9% !important;
     }
-
-/*
+    /*
     .button_container {
         width: 2.1875em;
         height: 1.6875em;
@@ -1646,130 +1546,123 @@ _::-webkit-full-page-media, _:future, :root .github-googleplay-button {
         -webkit-transform: translateY(0.6875em) translateX(0) rotate(45deg);
         transform: translateY(0.6875em) translateX(0) rotate(45deg);
     }*/
-
     .overlay nav {
         font-size: 3.1em;
         letter-spacing: 0.0625em;
         right: 6%;
     }
-
-    #section2 h1, #section2 h3, #section2 p {
+    #section2 h1,
+    #section2 h3,
+    #section2 p {
         margin-left: 0.5rem;
     }
-
-    #section2 h1{
+    #section2 h1 {
         font-size: 8em;
     }
-
-    #section2 h3{
+    #section2 h3 {
         font-size: 3.1em;
     }
-
-    #section2 h1,#section2 h3 {
+    #section2 h1,
+    #section2 h3 {
         margin-top: 0em;
     }
-
     #section2 p {
         font-size: 1.9em;
     }
-
     .force {
         top: 57%;
         left: 52%;
         height: 58%;
     }
-
-
-    #section3 h1, #section4 h1 {
+    #section3 h1,
+    #section4 h1 {
         font-size: 2em;
         left: 7%;
     }
-
     .info-container h2 {
         font-size: 2em;
     }
-
     .info-container h3 {
         font-size: 1.3em;
     }
-
     #section4 p {
         font-size: 2.3em;
     }
-
     .info-container {
-        width:62%;
+        width: 62%;
         left: 25%;
     }
-
     .phone-img {
         margin-left: 11%;
     }
-
 }
 
 @media screen and (min-width: 85.375em) {
-    html,body {
+    html,
+    body {
         font-size: 15px;
     }
 }
 
 @media screen and (min-width: 90em) {
-    html,body {
+    html,
+    body {
         font-size: 16px;
     }
 }
 
 @media screen and (min-width: 105em) {
-    html, body {
+    html,
+    body {
         font-size: 20px;
     }
-
-    #section3 h1, #section4 h1 {
+    #section3 h1,
+    #section4 h1 {
         top: 3.1%;
     }
 }
 
-    @media screen and (min-width: 120em) {
-        html, body {
-            font-size: 22px;
-        }
-
-        #section2 h1, #section2 h3, #section2 p {
-            margin-left: 0;
-        }
-
+@media screen and (min-width: 120em) {
+    html,
+    body {
+        font-size: 22px;
     }
-
-    @media screen and (min-width: 160em) {
-        html, body {
-            font-size: 29px;
-        }
-
-        #section2 h1, #section2 h3, #section2 p {
-            margin-left: 0.5rem;
-        }
-
+    #section2 h1,
+    #section2 h3,
+    #section2 p {
+        margin-left: 0;
     }
-
-    @media screen and (min-width: 180em) {
-        html, body {
-            font-size: 34px;
-        }
-
-    }
-
-    @media screen and (min-width: 200em) {
-        html, body {
-            font-size: 36px;
-        }
-    }
-
-    @media screen and (min-width: 240em) {
-        html, body {
-            font-size: 44px;
-        }
-
 }
 
+@media screen and (min-width: 160em) {
+    html,
+    body {
+        font-size: 29px;
+    }
+    #section2 h1,
+    #section2 h3,
+    #section2 p {
+        margin-left: 0.5rem;
+    }
+}
 
+@media screen and (min-width: 180em) {
+    html,
+    body {
+        font-size: 34px;
+    }
+}
+
+@media screen and (min-width: 200em) {
+    html,
+    body {
+        font-size: 36px;
+    }
+}
+
+@media screen and (min-width: 240em) {
+    html,
+    body {
+        font-size: 44px;
+    }
+}
