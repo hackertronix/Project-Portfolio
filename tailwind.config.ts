@@ -9,6 +9,7 @@ const config: Config = {
   theme: {
     extend: {},
   },
+  emmetCompletions: true,
   plugins: [],
 }
 export default config
