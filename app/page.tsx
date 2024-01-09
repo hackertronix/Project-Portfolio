@@ -1,23 +1,43 @@
+'use client';
 import Image from 'next/image';
-import { AnimatePresence, motion } from 'framer-motion';
+import { delay, motion } from 'framer-motion';
 
 export default function Home() {
   return (
     // Surface
     <div className="relative min-h-screen bg-custom-color">
       {/* Radial gradient */}
-      <div className="bg-halo-gradient fixed flex h-screen w-screen items-center justify-center">
+      <div className="fixed flex h-screen w-screen items-center justify-center bg-halo-gradient">
         {/* Line grid */}
-        <div className="visible absolute z-0 flex h-screen w-screen items-center justify-center opacity-25 max-sm:hidden">
-          <div className="bg-line-gradient absolute -top-1 h-full w-px translate-x-56"></div>
-          <div className="bg-line-gradient absolute -top-1 h-full w-px -translate-x-56"></div>
-          <div className="bg-line-gradient absolute top-72 h-full w-px rotate-90"></div>
-          <div className="bg-line-gradient absolute -top-72 h-full w-px rotate-90"></div>
-        </div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 0.25 }}
+          transition={{
+            ease: 'easeInOut',
+            duration: 0.5,
+          }}
+          className="visible absolute z-0 flex h-screen w-screen items-center justify-center opacity-25 max-sm:hidden"
+        >
+          <div className="absolute -top-1 h-full w-px translate-x-56 bg-line-gradient"></div>
+          <div className="absolute -top-1 h-full w-px -translate-x-56 bg-line-gradient"></div>
+          <div className="absolute top-72 h-full w-px rotate-90 bg-line-gradient"></div>
+          <div className="absolute -top-72 h-full w-px rotate-90 bg-line-gradient"></div>
+        </motion.div>
 
         {/* Card */}
 
-        <div className="relative mx-12 max-w-sm rounded-xl bg-white shadow-xl sm:mx-auto sm:max-w-sm md:mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            type: 'spring',
+            bounce: 0.25,
+            velocity: 2,
+            delay: 0.5,
+            duration: 1,
+          }}
+          className="relative mx-12 max-w-sm rounded-xl bg-white shadow-xl sm:mx-auto sm:max-w-sm md:mx-auto"
+        >
           <div className="mx-auto p-6">
             {/* Pill */}
             <div className="flex max-w-fit items-center justify-evenly rounded-full bg-salmon-200 p-1 shadow-inner transition ease-in-out hover:shadow-md hover:shadow-salmon-200/30">
@@ -93,7 +113,7 @@ export default function Home() {
               </ul>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
