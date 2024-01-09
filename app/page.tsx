@@ -6,6 +6,14 @@ export default function Home() {
     <div className="relative min-h-screen bg-custom-color">
       {/* Radial gradient */}
       <div className="bg-halo-gradient fixed flex h-screen w-screen items-center justify-center">
+        {/* Line grid */}
+        <div className="opacity-45 visible absolute z-0 flex h-screen w-screen items-center justify-center max-sm:hidden">
+          <div className="bg-line-gradient absolute -top-1 h-full w-px translate-x-56"></div>
+          <div className="bg-line-gradient absolute -top-1 h-full w-px -translate-x-56"></div>
+          <div className="bg-line-gradient absolute top-72 h-full w-px rotate-90"></div>
+          <div className="bg-line-gradient absolute -top-72 h-full w-px rotate-90"></div>
+        </div>
+
         {/* Card */}
         <div className="relative mx-12 max-w-sm rounded-xl bg-white shadow-xl sm:mx-auto sm:max-w-sm md:mx-auto">
           <div className="mx-auto p-6">

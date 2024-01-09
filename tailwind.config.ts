@@ -13,9 +13,12 @@ const config: Config = {
       },
 
       backgroundImage: {
-        'halo-gradient': 'radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(252,245,234,1) 34%, rgba(252,245,234,1) 50%, rgba(255,255,255,1) 100%)'
+        'halo-gradient':
+          'radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(252,245,234,1) 34%, rgba(252,245,234,1) 50%, rgba(255,255,255,1) 100%)',
+        'line-gradient':
+          'radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(235,156,0,1) 50%, rgba(235,156,0,1) 70%, rgba(251,245,233,1) 100%);',
       },
-      
+
       colors: {
         salmon: {
           '50': '#fef8ee',
