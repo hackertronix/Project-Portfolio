@@ -16,7 +16,7 @@ const config: Config = {
         'halo-gradient':
           'radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(252,245,234,1) 34%, rgba(252,245,234,1) 50%, rgba(255,255,255,1) 100%)',
         'line-gradient':
-          'radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(235,156,0,1) 50%, rgba(235,156,0,1) 70%, rgba(251,245,233,1) 100%);',
+          'radial-gradient(circle, rgba(252,246,234,1) 0%, rgba(241,166,45,1) 39%, rgba(241,166,45,1) 57%, rgba(252,246,234,1) 100%);',
       },
 
       colors: {

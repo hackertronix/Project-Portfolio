@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { AnimatePresence, motion } from 'framer-motion';
 
 export default function Home() {
   return (
@@ -7,7 +8,7 @@ export default function Home() {
       {/* Radial gradient */}
       <div className="bg-halo-gradient fixed flex h-screen w-screen items-center justify-center">
         {/* Line grid */}
-        <div className="opacity-45 visible absolute z-0 flex h-screen w-screen items-center justify-center max-sm:hidden">
+        <div className="visible absolute z-0 flex h-screen w-screen items-center justify-center opacity-25 max-sm:hidden">
           <div className="bg-line-gradient absolute -top-1 h-full w-px translate-x-56"></div>
           <div className="bg-line-gradient absolute -top-1 h-full w-px -translate-x-56"></div>
           <div className="bg-line-gradient absolute top-72 h-full w-px rotate-90"></div>
@@ -15,10 +16,11 @@ export default function Home() {
         </div>
 
         {/* Card */}
+
         <div className="relative mx-12 max-w-sm rounded-xl bg-white shadow-xl sm:mx-auto sm:max-w-sm md:mx-auto">
           <div className="mx-auto p-6">
             {/* Pill */}
-            <div className="flex max-w-fit items-center justify-evenly rounded-full bg-salmon-200 p-1 shadow-inner">
+            <div className="flex max-w-fit items-center justify-evenly rounded-full bg-salmon-200 p-1 shadow-inner transition ease-in-out hover:shadow-md hover:shadow-salmon-200/30">
               {/* Ping */}
               <div className="relative ml-1 flex h-3 w-3 items-center justify-center">
                 <div className="absolute inline-flex h-full w-full animate-ping rounded-full bg-white opacity-75" />
