@@ -23,8 +23,8 @@ export default function Home() {
 
               <Image
                 src="/arrow.svg"
-                width={22}
-                height={22}
+                width={18}
+                height={18}
                 alt="Contact Prateek"
               />
             </div>
