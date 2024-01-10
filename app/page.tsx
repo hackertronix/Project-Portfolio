@@ -1,6 +1,7 @@
 'use client';
 import Image from 'next/image';
 import { delay, motion } from 'framer-motion';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -40,24 +41,26 @@ export default function Home() {
         >
           <div className="mx-auto p-6">
             {/* Pill */}
-            <div className="flex max-w-fit items-center justify-evenly rounded-full bg-salmon-200 p-1 shadow-inner transition ease-in-out hover:shadow-md hover:shadow-salmon-200/30">
-              {/* Ping */}
-              <div className="relative ml-1 flex h-3 w-3 items-center justify-center">
-                <div className="absolute inline-flex h-full w-full animate-ping rounded-full bg-white opacity-75" />
-                <div className="h-2 w-2 rounded-full bg-white" />
-              </div>
+            <a href="mailto:leavethemails@gmail.com">
+              <div className="flex max-w-fit items-center justify-evenly rounded-full bg-salmon-200 p-1 shadow-inner transition ease-in-out hover:cursor-pointer hover:shadow-md hover:shadow-salmon-200/30">
+                {/* Ping */}
+                <div className="relative ml-1 flex h-3 w-3 items-center justify-center">
+                  <div className="absolute inline-flex h-full w-full animate-ping rounded-full bg-white opacity-75" />
+                  <div className="h-2 w-2 rounded-full bg-white" />
+                </div>
 
-              <div className="text px-2 text-xs font-light text-salmon-600">
-                <p>Available for projects</p>
-              </div>
+                <div className="text px-2 text-xs font-light text-salmon-600">
+                  <p>Available for projects</p>
+                </div>
 
-              <Image
-                src="/arrow.svg"
-                width={18}
-                height={18}
-                alt="Contact Prateek"
-              />
-            </div>
+                <Image
+                  src="/arrow.svg"
+                  width={18}
+                  height={18}
+                  alt="Contact Prateek"
+                />
+              </div>
+            </a>
             <div className=" text-sm font-light tracking-normal text-salmon-900">
               <div className="mt-8 space-y-4 ">
                 <p>
@@ -78,39 +81,42 @@ export default function Home() {
                   TypeScript
                 </p>
               </div>
-
-              <ul className="mt-16 space-y-6 text-sm font-light tracking-normal text-salmon-900">
-                <li className="flex items-center">
-                  <Image
-                    src="/linkedin.svg"
-                    width={24}
-                    height={24}
-                    alt="Picture of the author"
-                  />
-
-                  <p className="px-6">Work experience & timeline</p>
-                </li>
-                <li className="flex items-center">
-                  <Image
-                    src="/twitter.svg"
-                    width={24}
-                    height={24}
-                    alt="Picture of the author"
-                  />
-
-                  <p className="px-6">Shoot me a DM</p>
-                </li>
-                <li className="flex items-center">
-                  <Image
-                    src="/github.svg"
-                    width={24}
-                    height={24}
-                    alt="Picture of the author"
-                  />
-
-                  <p className="px-6">Stuff I work on for fun</p>
-                </li>
-              </ul>
+              {/* Links */}
+              <div className="mt-16 flex flex-col space-y-6 text-sm font-light leading-7 tracking-normal text-salmon-900">
+                <a href="https://linkedin.com/in/hackertronix">
+                  <div className="flex items-center justify-start hover:underline">
+                    <Image
+                      src="/linkedin.svg"
+                      width={24}
+                      height={24}
+                      alt="LinkedIn"
+                    />
+                    <p className="px-6 leading-7">Work experience & timeline</p>
+                  </div>
+                </a>
+                <a href="https://x.com/hackertronix">
+                  <div className="flex items-center justify-start hover:underline ">
+                    <Image
+                      src="/twitter.svg"
+                      width={24}
+                      height={24}
+                      alt="Twitter"
+                    />
+                    <p className="px-6 leading-7">Shoot me a DM</p>
+                  </div>
+                </a>
+                <a href="https://github.com/hackertronix">
+                  <div className="flex items-center justify-start hover:underline">
+                    <Image
+                      src="/github.svg"
+                      width={24}
+                      height={24}
+                      alt="Picture of the author"
+                    />
+                    <p className="px-6 leading-7">Stuff I work on for fun</p>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
         </motion.div>
