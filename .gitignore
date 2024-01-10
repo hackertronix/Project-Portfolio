@@ -13,8 +13,9 @@
 /.next/
 /out/
 
-# intelliJ
-/.idea
+# IntelliJ & VSCode
+.idea
+.vscode
 
 # production
 /build
