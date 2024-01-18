@@ -1,6 +1,7 @@
 import React from 'react';
-import { Story, Meta } from '@storybook/react/types-6-0';
-import BioCard from '@/app/components/BioCard';
+import { StoryObj, Meta } from '@storybook/react';
+
+import BioCard from '../app/components/BioCard';
 
 export default {
   title: 'Components/BioCard',
