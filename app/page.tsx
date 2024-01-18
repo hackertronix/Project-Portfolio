@@ -25,7 +25,8 @@ export default function Home() {
           <div className="absolute top-72 h-full w-px rotate-90 bg-line-gradient"></div>
           <div className="absolute -top-72 h-full w-px rotate-90 bg-line-gradient"></div>
         </motion.div>
-       <BioCard/>
+
+        <BioCard />
       </div>
     </div>
   );
