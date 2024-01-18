@@ -19,7 +19,7 @@ export default function BioCard() {
         delay: 0.5,
         duration: 1,
       }}
-      className="relative mx-12 max-w-sm rounded-sm bg-white shadow-xl sm:mx-auto sm:max-w-sm md:mx-auto"
+      className="relative mx-12 max-w-sm rounded-xl bg-white shadow-xl sm:mx-auto sm:max-w-sm md:mx-auto"
     >
       <div className="mx-auto p-6">
         {/* Pill */}
