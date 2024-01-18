@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Kotlin Full Color Logo Mark RGB</title>
+    <defs>
+        <linearGradient x1="100.000004%" y1="-4.23199999e-06%" x2="1.5212e-09%" y2="99.9999918%" id="linearGradient-1">
+            <stop stop-color="#E44857" offset="0.3435144%"></stop>
+            <stop stop-color="#C711E1" offset="46.89%"></stop>
+            <stop stop-color="#7F52FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Extra-Large-v2" transform="translate(-1370, -331)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <g id="Group-4" transform="translate(1329, 64)">
+                <g id="Kotlin-Full-Color-Logo-Mark-RGB" transform="translate(41, 267)">
+                    <polygon id="Path" points="100 100 0 100 0 0 100 0 50 50"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
